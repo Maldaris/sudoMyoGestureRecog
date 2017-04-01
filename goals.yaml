@@ -1,0 +1,27 @@
+Armband:
+  -Get basic connect usage working
+  -design event plugin system
+  -Design supported gestures (DITCH THE FUCKING FIST BULLSHIT)
+  -Design gesture library's regcognizer for gestures
+  Needs:
+    -Simplex recognition of basic guesture modes (spread, wave out, touch, etc)
+    -complex recognition of per-frame movement (rotation, postition composite)
+  Wants:
+    -customizable margin of error (radius from original line based?)
+    -keyframe density customization
+
+Atom:
+    -Triage useful macros that require a hand to leave the keyboard to be useful (opening project folders?)
+    -peek at atom package structure and decide if total plugin or separate
+    standalone runtime is necessary
+
+Notes:
+  -Fist recognition requires way too much effort, swap with hand spread
+  -Apparently not when you calibrate it properly >.>
+  -does individual fingers work? (for thumb touch)
+  -Myo lib does `.on()` style events. there needs to be a way to poll
+    continously.
+  -Group accelerometer data?
+  -IMU or EMG?
+  -Definitely IMU
+  -`myo.streamIMU(true);`
